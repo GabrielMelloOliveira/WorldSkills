@@ -7,9 +7,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.LoginScreenController">
-   <children>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.RunnerFunctions.RunnerRegistrationConfirmationController">
+    <children>
       <BorderPane prefHeight="425.0" prefWidth="620.0">
          <top>
             <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
@@ -20,6 +19,7 @@
                         <Font name="Arial Bold" size="24.0" />
                      </font>
                   </Label>
+                  <Button fx:id="btn_logout" layoutX="533.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
                </children>
             </AnchorPane>
          </top>
@@ -37,26 +37,21 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="tf_email_address" layoutX="271.0" layoutY="123.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter your email address" />
-                  <TextField fx:id="pf_password" layoutX="271.0" layoutY="158.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter your password" />
-                  <Button fx:id="btn_login" layoutX="271.0" layoutY="193.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Login" />
-                  <Button fx:id="btn_cancel" layoutX="346.0" layoutY="193.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
-                  <Label alignment="CENTER" layoutX="160.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Login Form">
+                  <Button fx:id="btn_ok" layoutX="265.0" layoutY="175.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" text="OK">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Label alignment="CENTER" layoutX="69.0" layoutY="28.0" prefHeight="40.0" prefWidth="483.0" text="Thanks you for registering as a runner!">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="60.0" layoutY="86.0" prefHeight="20.0" prefWidth="500.0" text="Please log in the system using your email address and password">
+                  <Label alignment="CENTER" layoutX="60.0" layoutY="86.0" prefHeight="20.0" prefWidth="500.0" text="Thank you for registering as a runner in Marathon Skills 2015!">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="159.0" layoutY="123.0" prefHeight="25.0" prefWidth="95.0" text="Email:">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER_RIGHT" layoutX="159.0" layoutY="158.0" prefHeight="25.0" prefWidth="95.0" text="Password:">
+                  <Label alignment="CENTER" layoutX="61.0" layoutY="115.0" prefHeight="20.0" prefWidth="500.0" text="You will be contacted soon about payment.">
                      <font>
                         <Font size="14.0" />
                      </font>

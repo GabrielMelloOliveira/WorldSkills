@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RunnerFunctions.RegisterforEventController">
+    <children>
+      <BorderPane prefHeight="643.0" prefWidth="720.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="475.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="633.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <CheckBox layoutX="42.0" layoutY="217.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="277.0" text="42km Full marathon ($145)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox layoutX="42.0" layoutY="241.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="277.0" text="21km Half marathon ($75)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox layoutX="42.0" layoutY="265.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="277.0" text="5km Fun run ($20)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <RadioButton layoutX="404.0" layoutY="219.0" mnemonicParsing="false" prefWidth="277.0" text="Option A ($0): Runner's bib + RFID bracelet." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="404.0" layoutY="263.0" mnemonicParsing="false" prefWidth="277.0" text="Option B ($20): Option A + hat + water bottle." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="404.0" layoutY="307.0" mnemonicParsing="false" prefWidth="277.0" text="Option C ($45): Option B + t-shirt + souvenir booklet." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField layoutX="167.0" layoutY="374.0" prefHeight="25.0" prefWidth="175.0" />
+                  <TextField layoutX="167.0" layoutY="409.0" prefHeight="25.0" prefWidth="175.0" />
+                  <Button fx:id="btn_register" layoutX="97.0" layoutY="452.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Register">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_cancel" layoutX="192.0" layoutY="452.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" text="Cancel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="211.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Register for an event">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="97.0" layoutY="83.0" prefHeight="60.0" prefWidth="527.0" text="Please fill out all of the following information to register for events in the Skills Marathon 2015 being held in Sao Paulo, Brazil. You will be contacted after you have registered to organise payment and other details." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="158.0" prefHeight="40.0" prefWidth="277.0" text="Competition events" textFill="#b4b4b4">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="404.0" layoutY="158.0" prefHeight="40.0" prefWidth="277.0" text="Race kit options" textFill="#b4b4b4">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="307.0" prefHeight="40.0" prefWidth="277.0" text="Competition events" textFill="#b4b4b4">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="404.0" layoutY="364.0" prefHeight="40.0" prefWidth="277.0" text="Registration cost" textFill="#b4b4b4">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="404.0" layoutY="404.0" prefHeight="121.0" prefWidth="277.0" text="\$185" textFill="#b4b4b4">
+                     <font>
+                        <Font name="Arial" size="85.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="42.0" layoutY="376.0" prefHeight="20.0" prefWidth="110.0" text="Charity:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="42.0" layoutY="411.0" prefHeight="20.0" prefWidth="110.0" text="Target to raise:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

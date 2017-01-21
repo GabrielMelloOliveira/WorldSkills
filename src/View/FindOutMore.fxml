@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FindOutMoreController">
+    <children>
+      <BorderPane prefHeight="494.0" prefWidth="620.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_marathon_skills" layoutX="70.0" layoutY="95.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="Marathon Skills 2015">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btn_how_long" layoutX="315.0" layoutY="95.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="How long is a marathon ?">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_previous_race" layoutX="70.0" layoutY="171.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="Previous race results">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_list_charities" layoutX="315.0" layoutY="171.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="List of charities">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_bmi_calculator" layoutX="70.0" layoutY="247.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="BMI calculator">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_bmr_calculator" layoutX="315.0" layoutY="247.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="BMR calculator">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="160.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Find out more information">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

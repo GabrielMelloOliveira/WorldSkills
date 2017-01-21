@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.RunnerFunctions.RunnerRegistrationController">
+    <children>
+      <BorderPane prefHeight="480.0" prefWidth="620.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="tf_email_address" layoutX="141.0" layoutY="124.0" prefHeight="25.0" prefWidth="190.0" promptText="Email address" />
+                  <TextField fx:id="pf_password" layoutX="141.0" layoutY="159.0" prefHeight="25.0" prefWidth="170.0" promptText="Password" />
+                  <TextField fx:id="pf_password_again" layoutX="141.0" layoutY="194.0" prefHeight="25.0" prefWidth="170.0" promptText="Re-enter password" />
+                  <TextField fx:id="tf_first_name" layoutX="140.0" layoutY="229.0" prefHeight="25.0" prefWidth="170.0" promptText="First name" />
+                  <TextField fx:id="tf_last_name" layoutX="139.0" layoutY="264.0" prefHeight="25.0" prefWidth="170.0" promptText="Last name" />
+                  <ComboBox fx:id="cb_gender" layoutX="449.0" layoutY="124.0" prefWidth="150.0" />
+                  <DatePicker fx:id="dp_date_birth" layoutX="449.0" layoutY="159.0" prefHeight="25.0" prefWidth="150.0" promptText="1978-07-16" />
+                  <ComboBox fx:id="cb_country" layoutX="449.0" layoutY="194.0" prefWidth="150.0" />
+                  <Button fx:id="btn_register" layoutX="264.0" layoutY="309.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Register" />
+                  <Button fx:id="btn_cancel" layoutX="339.0" layoutY="309.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
+                  <Label alignment="CENTER" layoutX="160.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Register as a runner">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="60.0" layoutY="86.0" prefHeight="20.0" prefWidth="500.0" text="Please log in the system using your email address and password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="110.0" text="Email:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="159.0" prefHeight="25.0" prefWidth="110.0" text="Password:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="194.0" prefHeight="25.0" prefWidth="110.0" text="Password Again:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="229.0" prefHeight="25.0" prefWidth="110.0" text="First Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="264.0" prefHeight="25.0" prefWidth="110.0" text="Last Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="342.0" layoutY="124.0" prefHeight="25.0" prefWidth="95.0" text="Gender:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="342.0" layoutY="159.0" prefHeight="25.0" prefWidth="95.0" text="Date of Birth:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="342.0" layoutY="194.0" prefHeight="25.0" prefWidth="95.0" text="Country:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

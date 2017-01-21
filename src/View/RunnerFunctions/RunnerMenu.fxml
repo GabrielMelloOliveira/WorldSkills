@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.RunnerFunctions.RunnerMenuController">
+    <children>
+      <BorderPane prefHeight="494.0" prefWidth="620.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="533.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_register_event" layoutX="70.0" layoutY="95.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="Register for an event">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btn_race_results" layoutX="315.0" layoutY="95.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="My race results">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_edit_profile" layoutX="70.0" layoutY="171.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="Edit your profile">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_my_sponsorship" layoutX="315.0" layoutY="171.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="My sponsorship">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_contact_information" layoutX="70.0" layoutY="247.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="Contact information">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="160.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Runner menu">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
