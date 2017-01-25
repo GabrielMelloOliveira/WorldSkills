@@ -11,11 +11,11 @@ import javafx.stage.Stage;
  * @author Gabriel Mello de Oliveira
  */
 
-public class MainScreen extends Application {
+public class How_Long extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/MainScreen.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/How_Long.fxml"));
         
         Scene scene = new Scene(root);
         

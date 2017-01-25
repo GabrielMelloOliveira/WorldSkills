@@ -11,11 +11,11 @@ import javafx.stage.Stage;
  * @author Gabriel Mello de Oliveira
  */
 
-public class MainScreen extends Application {
+public class About_MS extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/MainScreen.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/About_MS.fxml"));
         
         Scene scene = new Scene(root);
         

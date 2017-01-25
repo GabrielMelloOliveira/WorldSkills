@@ -15,7 +15,7 @@ public class FindOutMore extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FindOutMore.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/FindOutMore.fxml"));
         
         Scene scene = new Scene(root);
         

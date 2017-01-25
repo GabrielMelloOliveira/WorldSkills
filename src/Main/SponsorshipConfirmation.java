@@ -15,7 +15,7 @@ public class SponsorshipConfirmation extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("SponsorshipConfirmation.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/SponsorshipConfirmation.fxml"));
         
         Scene scene = new Scene(root);
         

@@ -15,7 +15,7 @@ public class SponsorRunner extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("SponsorRunner.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/SponsorRunner.fxml"));
         
         Scene scene = new Scene(root);
         

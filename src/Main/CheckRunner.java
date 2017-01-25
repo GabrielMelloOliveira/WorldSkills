@@ -15,7 +15,7 @@ public class CheckRunner extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("CheckRunner.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/CheckRunner.fxml"));
         
         Scene scene = new Scene(root);
         

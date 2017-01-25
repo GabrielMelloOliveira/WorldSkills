@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="740.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.CoordinatorFunctions.RunnerManagementController">
+    <children>
+      <BorderPane prefHeight="599.0" prefWidth="740.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="653.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Label alignment="CENTER" layoutX="220.0" layoutY="31.0" prefHeight="40.0" prefWidth="300.0" text="Sponsorship overview">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="142.0" layoutY="142.0" prefHeight="25.0" prefWidth="160.0" />
+                  <Button fx:id="btn_sort" layoutX="328.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Refresh" />
+                  <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="143.0" prefHeight="23.0" prefWidth="85.0" text="Status:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="45.0" layoutY="315.0" prefHeight="179.0" prefWidth="650.0">
+                    <columns>
+                      <TableColumn prefWidth="111.0" text="First Name" />
+                      <TableColumn prefWidth="124.0" text="Last Name" />
+                        <TableColumn prefWidth="178.0" text="Email" />
+                        <TableColumn prefWidth="138.0" text="Status" />
+                        <TableColumn prefWidth="98.0" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="178.0" prefHeight="23.0" prefWidth="85.0" text="Race event:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="142.0" layoutY="177.0" prefHeight="25.0" prefWidth="160.0" />
+                  <ComboBox layoutX="142.0" layoutY="212.0" prefHeight="25.0" prefWidth="160.0" />
+                  <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="213.0" prefHeight="23.0" prefWidth="85.0" text="Sort by:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="274.0" layoutY="282.0" prefHeight="23.0" prefWidth="101.0" text="Total runners:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="382.0" layoutY="282.0" prefHeight="23.0" prefWidth="71.0" text="123">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_sort1" layoutX="513.0" layoutY="137.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" text="Runner details (CSV)" />
+                  <Button fx:id="btn_sort11" layoutX="513.0" layoutY="182.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" text="Email address list" />
+                  <Label alignment="CENTER" layoutX="34.0" layoutY="86.0" prefHeight="40.0" prefWidth="300.0" text="Sort and filter">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="512.0" layoutY="86.0" prefHeight="40.0" prefWidth="160.0" text="Export">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
