@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CoordinatorFunctions.CertificatePreviewController">
+    <children>
+      <BorderPane prefHeight="709.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="713.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="105.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lb_inf" alignment="CENTER" layoutX="150.0" layoutY="195.0" prefHeight="49.0" prefWidth="500.0" text="Congratulations &quot;Firstname&quot; &quot;Lastname&quot; for running in the 42km Full marathon. You ran a time fo 4:13:45 and got a rank of 183!" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="72.0" layoutY="244.0" prefHeight="83.0" prefWidth="656.0" text="Certificate of Participation">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="48.0" prefWidth="800.0">
+                     <children>
+                        <Label layoutX="260.0" layoutY="11.0" text="Race event:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cb_race_event" layoutX="360.0" layoutY="12.0" prefHeight="25.0" prefWidth="180.0" />
+                     </children></AnchorPane>
+                  <Label alignment="CENTER" layoutX="72.0" layoutY="353.0" prefHeight="64.0" prefWidth="656.0" text="Marathon Skills 2017">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="150.0" layoutY="313.0" prefHeight="49.0" prefWidth="500.0" text="in" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_location" alignment="CENTER" layoutX="72.0" layoutY="417.0" prefHeight="44.0" prefWidth="656.0" text="Osaka, Japan">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_charity" alignment="CENTER" layoutX="232.0" layoutY="502.0" prefHeight="31.0" prefWidth="336.0" text="You also raised $1,300 for Charity Name!" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="586.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/DeuSuperBom.PNG" />
+                     </image></ImageView>
+                  <ImageView fitHeight="101.0" fitWidth="284.0" layoutX="274.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/fundoverde.PNG" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

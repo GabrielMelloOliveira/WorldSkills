@@ -7,14 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.RunnerFunctions.MyResultsController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RunnerFunctions.MyResultsController">
     <children>
       <BorderPane prefHeight="600.0" prefWidth="620.0">
          <top>
             <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
-                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="24.0" />
                      </font>
@@ -36,7 +36,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btn_login" layoutX="237.0" layoutY="446.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="View all race results" />
+                  <Button fx:id="btn_view_results" layoutX="237.0" layoutY="446.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="View all race results" />
                   <Label alignment="CENTER" layoutX="160.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="My race results">
                      <font>
                         <Font size="24.0" />
@@ -62,12 +62,12 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="193.0" layoutY="160.0" prefHeight="25.0" prefWidth="100.0" text="Male" textAlignment="CENTER" wrapText="true">
+                  <Label fx:id="lb_gender" alignment="CENTER" layoutX="193.0" layoutY="160.0" prefHeight="25.0" prefWidth="100.0" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="439.0" layoutY="160.0" prefHeight="25.0" prefWidth="100.0" text="18-29" textAlignment="CENTER" wrapText="true">
+                  <Label fx:id="lb_age" alignment="CENTER" layoutX="439.0" layoutY="160.0" prefHeight="25.0" prefWidth="100.0" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdministratorFunctions.UserManagementController">
+    <children>
+      <BorderPane prefHeight="599.0" prefWidth="740.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="653.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Label alignment="CENTER" layoutX="220.0" layoutY="31.0" prefHeight="40.0" prefWidth="300.0" text="User management">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cb_role" layoutX="535.0" layoutY="89.0" prefHeight="25.0" prefWidth="160.0" />
+                  <Button fx:id="btn_refresh" layoutX="535.0" layoutY="194.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Refresh" />
+                  <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="90.0" prefHeight="23.0" prefWidth="85.0" text="Filter by role:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="table" layoutX="45.0" layoutY="258.0" prefHeight="236.0" prefWidth="650.0">
+                    <columns>
+                      <TableColumn fx:id="col_first_name" prefWidth="111.0" text="First Name" />
+                      <TableColumn fx:id="col_last_name" prefWidth="124.0" text="Last Name" />
+                        <TableColumn fx:id="col_email" prefWidth="178.0" text="Email" />
+                        <TableColumn fx:id="col_role" prefWidth="138.0" text="Role" />
+                        <TableColumn fx:id="col_edit" prefWidth="98.0" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="125.0" prefHeight="23.0" prefWidth="85.0" text="Sort by:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cb_sort" layoutX="535.0" layoutY="124.0" prefHeight="25.0" prefWidth="160.0" />
+                  <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="160.0" prefHeight="23.0" prefWidth="85.0" text="Search:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="224.0" prefHeight="23.0" prefWidth="82.0" text="Total users:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_total_users" layoutX="134.0" layoutY="224.0" prefHeight="23.0" prefWidth="71.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_add_user" layoutX="45.0" layoutY="96.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" text="+ Add a new user">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <TextField fx:id="tf_search" layoutX="535.0" layoutY="159.0" prefWidth="160.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

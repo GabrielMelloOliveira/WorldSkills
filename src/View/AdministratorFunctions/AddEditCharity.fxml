@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdministratorFunctions.AddEditCharityController">
+    <children>
+      <BorderPane prefHeight="600.0" prefWidth="700.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="613.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="55.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="tf_charity_name" layoutX="27.0" layoutY="119.0" prefHeight="25.0" prefWidth="190.0" promptText="Charity name" />
+                  <Button fx:id="btn_save" layoutX="283.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Save" />
+                  <Button fx:id="btn_cancel" layoutX="358.0" layoutY="456.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
+                  <Label alignment="CENTER" layoutX="200.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Add/edit charity">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="94.0" prefHeight="25.0" prefWidth="95.0" text="Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="152.0" prefHeight="25.0" prefWidth="95.0" text="Description:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="418.0" layoutY="98.0" prefHeight="42.0" prefWidth="242.0" text="Leave the &quot;logo file&quot; field blank if you do not want to change the logo." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="tf_description" layoutX="27.0" layoutY="177.0" prefHeight="246.0" prefWidth="316.0" promptText="Description of the charity" />
+                  <Label layoutX="420.0" layoutY="165.0" prefHeight="25.0" prefWidth="95.0" text="Logo file:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_logo" layoutX="420.0" layoutY="190.0" prefHeight="25.0" prefWidth="160.0" promptText="charity_logo.jpg" />
+                  <Button fx:id="btn_logo" layoutX="590.0" layoutY="190.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Browse..." />
+                  <Label layoutX="420.0" layoutY="234.0" prefHeight="25.0" prefWidth="95.0" text="Current logo:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img_logo" fitHeight="150.0" fitWidth="150.0" layoutX="418.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

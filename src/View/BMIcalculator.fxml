@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BMIcalculatorController">
+    <children>
+      <BorderPane prefHeight="599.0" prefWidth="740.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="75.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Label alignment="CENTER" layoutX="220.0" layoutY="31.0" prefHeight="40.0" prefWidth="300.0" text="BMI calculator">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="83.0" prefHeight="46.0" prefWidth="236.0" text="Information about what BMI is and how the calculator works." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="45.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="145.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="264.0" prefHeight="21.0" prefWidth="76.0" text="Height:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="291.0" prefHeight="21.0" prefWidth="76.0" text="Weight:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_height" layoutX="132.0" layoutY="262.0" prefHeight="25.0" prefWidth="77.0" promptText="170" />
+                  <TextField fx:id="tf_weight" layoutX="132.0" layoutY="289.0" prefHeight="25.0" prefWidth="77.0" promptText="70" />
+                  <Label layoutX="220.0" layoutY="290.0" prefHeight="21.0" prefWidth="76.0" text="kg" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="263.0" prefHeight="21.0" prefWidth="76.0" text="cm" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_calculate" layoutX="65.0" layoutY="347.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Calculate" />
+                  <Button fx:id="btn_cancel" layoutX="152.0" layoutY="347.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Cancel" />
+                  <ImageView fitHeight="260.0" fitWidth="200.0" layoutX="444.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/CaraGrosso.PNG" />
+                     </image></ImageView>
+                  <ImageView fx:id="img_male" fitHeight="100.0" fitWidth="100.0" layoutX="45.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Male.PNG" />
+                     </image></ImageView>
+                  <ImageView fx:id="img_female" fitHeight="100.0" fitWidth="100.0" layoutX="159.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Female.PNG" />
+                     </image></ImageView>
+                     <Label fx:id="lb_bmi3" alignment="CENTER" layoutX="547.0" layoutY="359.0" prefHeight="21.0" prefWidth="76.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="11.0" fitWidth="320.0" layoutX="385.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/NseiSePrecisaDissoMasPegueiMesmoAssimVlwENoixAbracos.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_2" fitHeight="38.0" fitWidth="46.0" layoutX="482.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Images/flecha.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_1" fitHeight="38.0" fitWidth="46.0" layoutX="402.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Images/flecha.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_3" fitHeight="38.0" fitWidth="46.0" layoutX="562.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Images/flecha.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_4" fitHeight="38.0" fitWidth="46.0" layoutX="643.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Images/flecha.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lb_bmi2" alignment="CENTER" layoutX="467.0" layoutY="359.0" prefHeight="21.0" prefWidth="76.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_bmi1" alignment="CENTER" layoutX="387.0" layoutY="359.0" prefHeight="21.0" prefWidth="76.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_bmi4" alignment="CENTER" layoutX="628.0" layoutY="359.0" prefHeight="21.0" prefWidth="76.0" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="387.0" layoutY="444.0" prefHeight="21.0" prefWidth="76.0" text="Underweight" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="547.0" layoutY="444.0" prefHeight="21.0" prefWidth="76.0" text="Overweight" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="628.0" layoutY="444.0" prefHeight="21.0" prefWidth="76.0" text="Obese" wrapText="true" />
+                  <Label alignment="CENTER" layoutX="467.0" layoutY="444.0" prefHeight="21.0" prefWidth="76.0" text="Healthy" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

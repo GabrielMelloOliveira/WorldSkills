@@ -7,13 +7,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.MainScreenController">
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainScreenController">
     <children>
       <BorderPane prefHeight="425.0" prefWidth="620.0">
          <top>
             <AnchorPane prefHeight="164.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" layoutX="75.0" layoutY="25.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="25.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="36.0" />
                      </font>
@@ -23,7 +23,7 @@
                         <Font name="Arial Italic" size="20.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="75.0" layoutY="107.0" prefHeight="30.0" prefWidth="470.0" text="Saturday Setember 5 2015" textFill="#b4b4b4">
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="107.0" prefHeight="30.0" prefWidth="470.0" text="Saturday Setember 5 2017" textFill="#b4b4b4">
                      <font>
                         <Font name="Arial Italic" size="20.0" />
                      </font>

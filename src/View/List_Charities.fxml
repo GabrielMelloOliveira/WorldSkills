@@ -7,14 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.List_CharitiesController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.List_CharitiesController">
     <children>
       <BorderPane prefHeight="500.0" prefWidth="620.0">
          <top>
             <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
-                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="24.0" />
                      </font>
@@ -41,14 +41,14 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="60.0" layoutY="86.0" prefHeight="46.0" prefWidth="500.0" text="This is a list of all the charities that are being supported through Marathon Skills 2015. Thank you for helping to support them by sponsoring runners!" textAlignment="CENTER" wrapText="true">
+                  <Label alignment="CENTER" layoutX="60.0" layoutY="86.0" prefHeight="46.0" prefWidth="500.0" text="This is a list of all the charities that are being supported through Marathon Skills 2017. Thank you for helping to support them by sponsoring runners!" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <ScrollPane layoutX="50.0" layoutY="157.0" prefHeight="238.0" prefWidth="520.0">
                      <content>
-                        <VBox prefHeight="237.0" prefWidth="518.0" />
+                        <VBox fx:id="vbox" prefHeight="237.0" prefWidth="518.0" />
                      </content>
                   </ScrollPane>
                </children>

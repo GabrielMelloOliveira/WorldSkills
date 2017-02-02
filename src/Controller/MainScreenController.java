@@ -1,5 +1,6 @@
 package Controller;
 
+import Main.MainScreen;
 import OthersCodes.OpenViews;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,10 +20,18 @@ public class MainScreenController implements Initializable {
     @FXML private Button btn_findmore, btn_register_runner, btn_login, btn_sponsor_runner;
 
     void action_buttons(){
-        btn_findmore.setOnMouseClicked(s -> OpenViews.openview_FindOutMore());
-        btn_register_runner.setOnMouseClicked(s -> OpenViews.openview_SponsorshipConfirmation());
-        btn_sponsor_runner.setOnMouseClicked(s -> OpenViews.openview_SponsorRunner());
-        btn_login.setOnMouseClicked(s -> OpenViews.openview_LoginScreen());
+        btn_findmore.setOnMouseClicked(s -> {OpenViews.openview_FindOutMore();
+            MainScreen.getStage().close();
+        });
+        btn_register_runner.setOnMouseClicked(s -> {OpenViews.openview_CheckRunner();
+            MainScreen.getStage().close();
+        });
+        btn_sponsor_runner.setOnMouseClicked(s -> {OpenViews.openview_SponsorRunner();
+            MainScreen.getStage().close();
+        });
+        btn_login.setOnMouseClicked(s -> {OpenViews.openview_LoginScreen();
+            MainScreen.getStage().close();
+        });
     }
     
     @Override

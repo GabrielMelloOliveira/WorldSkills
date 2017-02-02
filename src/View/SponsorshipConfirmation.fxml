@@ -7,14 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.SponsorshipConfirmationController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SponsorshipConfirmationController">
     <children>
       <BorderPane prefHeight="500.0" prefWidth="620.0">
          <top>
             <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
-                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="24.0" />
                      </font>
@@ -36,7 +36,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btn_back1" layoutX="274.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Button fx:id="btn_back2" layoutX="274.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
                   <Label alignment="CENTER" layoutX="126.0" layoutY="28.0" prefHeight="40.0" prefWidth="369.0" text="Thank you for your sponsorship!">
                      <font>
                         <Font size="24.0" />
@@ -52,7 +52,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="126.0" layoutY="149.0" prefHeight="40.0" prefWidth="369.0" text="Runner">
+                  <Label fx:id="lb_runner" alignment="CENTER" layoutX="126.0" layoutY="149.0" prefHeight="40.0" prefWidth="369.0" text="Runner">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -62,7 +62,7 @@
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="185.0" layoutY="242.0" prefHeight="84.0" prefWidth="251.0" text="\$50">
+                  <Label fx:id="lb_money" alignment="CENTER" layoutX="185.0" layoutY="242.0" prefHeight="84.0" prefWidth="251.0" text="\$50">
                      <font>
                         <Font size="72.0" />
                      </font>

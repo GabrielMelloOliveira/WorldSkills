@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,14 +8,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.About_MSController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="726.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.About_MSController">
     <children>
-      <BorderPane prefHeight="494.0" prefWidth="620.0">
+      <BorderPane prefHeight="664.0" prefWidth="726.0">
          <top>
             <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
-                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="24.0" />
                      </font>
@@ -25,7 +26,7 @@
          <bottom>
             <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
-                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="68.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -36,16 +37,25 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btn_competed_before" layoutX="170.0" layoutY="99.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="280.0" text="I have competed before">
+                  <Label alignment="CENTER" layoutX="213.0" layoutY="26.0" prefHeight="40.0" prefWidth="300.0" text="About Marathon Skills 2017">
                      <font>
-                        <Font name="Arial" size="18.0" />
-                     </font></Button>
-                  <Button fx:id="btn_new_competitor" layoutX="170.0" layoutY="201.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="280.0" text="I am a new competitor">
-                     <font>
-                        <Font name="Arial" size="18.0" />
+                        <Font size="24.0" />
                      </font>
-                  </Button>
-                  <Button fx:id="btn_login" layoutX="546.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Login" />
+                  </Label>
+                  <ImageView fx:id="img_map" fitHeight="201.0" fitWidth="233.0" layoutX="60.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Marathon.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="60.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="175.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="174.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="59.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" layoutX="363.0" layoutY="98.0" prefHeight="40.0" prefWidth="300.0" text="About Marathon Skills 2017">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </center>

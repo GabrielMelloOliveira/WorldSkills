@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdministratorFunctions.VolunteerManagementController">
+    <children>
+      <BorderPane prefHeight="550.0" prefWidth="700.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_logout" layoutX="613.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Logout" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="55.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_refresh" layoutX="139.0" layoutY="153.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Refresh" />
+                  <Label alignment="CENTER" layoutX="200.0" layoutY="27.0" prefHeight="40.0" prefWidth="300.0" text="Volunteer management">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="44.0" layoutY="122.0" prefHeight="25.0" prefWidth="80.0" text="Sort by:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="39.0" layoutY="82.0" prefHeight="31.0" prefWidth="242.0" text="Sort and filter">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cb_sort" layoutX="139.0" layoutY="122.0" prefWidth="150.0" />
+                  <Label alignment="CENTER" layoutX="420.0" layoutY="87.0" prefHeight="31.0" prefWidth="242.0" text="Import">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_import_volunteers" layoutX="461.0" layoutY="130.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="160.0" text="Import volunteers" />
+                  <Label alignment="CENTER_RIGHT" layoutX="242.0" layoutY="204.0" prefHeight="23.0" prefWidth="138.0" text="Total volunteers:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_total_volunteers" layoutX="387.0" layoutY="204.0" prefHeight="23.0" prefWidth="71.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="table" layoutX="45.0" layoutY="244.0" prefHeight="201.0" prefWidth="610.0">
+                    <columns>
+                      <TableColumn fx:id="col_first_name" prefWidth="163.0" text="First Name" />
+                        <TableColumn fx:id="col_last_name" prefWidth="183.0" text="Last Name" />
+                        <TableColumn fx:id="col_country" prefWidth="162.0" text="Country" />
+                        <TableColumn fx:id="col_gender" prefWidth="101.0" text="Gender" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

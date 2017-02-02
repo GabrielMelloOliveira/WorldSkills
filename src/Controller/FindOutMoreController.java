@@ -1,5 +1,6 @@
 package Controller;
 
+import Main.FindOutMore;
 import OthersCodes.OpenViews;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,16 +18,33 @@ public class FindOutMoreController implements Initializable {
 
     @FXML private Label time_marathon;
 
+    @FXML private Button btn_back;
+    
     @FXML private Button btn_previous_race, btn_list_charities, btn_bmr_calculator, 
-            btn_back, btn_how_long, btn_bmi_calculator, btn_marathon_skills;
+            btn_how_long, btn_bmi_calculator, btn_marathon_skills;
     
     void action_buttons(){
-        btn_previous_race.setOnMouseClicked(s -> OpenViews.openview_Previous_Results());
-        btn_list_charities.setOnMouseClicked(s -> OpenViews.openview_List_Charities());
-        //btn_bmr_calculator.setOnMouseClicked(s -> OpenViews.);
-        btn_how_long.setOnMouseClicked(s -> OpenViews.openview_How_Long());
-        //btn_bmi_calculator.setOnMouseClicked(s -> OpenViews.);
-        btn_marathon_skills.setOnMouseClicked(s -> OpenViews.openview_About_MS());
+        btn_previous_race.setOnMouseClicked(s -> {OpenViews.openview_Previous_Results();
+            FindOutMore.getStage().close();
+        });
+        btn_list_charities.setOnMouseClicked(s -> {OpenViews.openview_List_Charities();
+            FindOutMore.getStage().close();
+        });
+        btn_bmr_calculator.setOnMouseClicked(s -> {OpenViews.openview_BMRcalculator();
+            FindOutMore.getStage().close();
+        });
+        btn_how_long.setOnMouseClicked(s -> {OpenViews.openview_How_Long();
+            FindOutMore.getStage().close();
+        });
+        btn_bmi_calculator.setOnMouseClicked(s -> {OpenViews.openview_BMIcalculator();
+            FindOutMore.getStage().close();
+        });
+        btn_marathon_skills.setOnMouseClicked(s -> {OpenViews.openview_About_MS();
+            FindOutMore.getStage().close();
+        });
+        btn_back.setOnMouseClicked(s -> {OpenViews.openview_MainScreen();
+            FindOutMore.getStage().close();
+        });
     }
     
     /**

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BMRcalculatorController">
+    <children>
+      <BorderPane prefHeight="599.0" prefWidth="740.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="75.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Label alignment="CENTER" layoutX="220.0" layoutY="31.0" prefHeight="40.0" prefWidth="300.0" text="BMR calculator">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="83.0" prefHeight="46.0" prefWidth="236.0" text="Information about what BMI is and how the calculator works." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="img_male" fitHeight="100.0" fitWidth="100.0" layoutX="45.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Male.PNG" />
+                     </image></ImageView>
+                  <ImageView fx:id="img_female" fitHeight="100.0" fitWidth="100.0" layoutX="159.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Female.PNG" />
+                     </image></ImageView>
+                  <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="264.0" prefHeight="21.0" prefWidth="76.0" text="Height:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="291.0" prefHeight="21.0" prefWidth="76.0" text="Weight:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_height" layoutX="132.0" layoutY="262.0" prefHeight="25.0" prefWidth="77.0" promptText="180" />
+                  <TextField fx:id="tf_weight" layoutX="132.0" layoutY="289.0" prefHeight="25.0" prefWidth="77.0" promptText="70" />
+                  <Label layoutX="220.0" layoutY="290.0" prefHeight="21.0" prefWidth="76.0" text="kg" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="220.0" layoutY="263.0" prefHeight="21.0" prefWidth="76.0" text="cm" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_calculate" layoutX="65.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Calculate" />
+                  <Button fx:id="btn_cancel" layoutX="152.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Cancel" />
+                  <Label layoutX="220.0" layoutY="317.0" prefHeight="21.0" prefWidth="76.0" text="years" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_age" layoutX="132.0" layoutY="316.0" prefHeight="25.0" prefWidth="77.0" promptText="30" />
+                  <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="318.0" prefHeight="21.0" prefWidth="76.0" text="Age:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="441.0" layoutY="83.0" prefHeight="46.0" prefWidth="236.0" text="Information about the calorie figures goes here." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="442.0" layoutY="140.0" prefHeight="40.0" prefWidth="235.0" text="Your BMR">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_bmr" alignment="CENTER" layoutX="442.0" layoutY="180.0" prefHeight="56.0" prefWidth="235.0" text="0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="442.0" layoutY="254.0" prefHeight="40.0" prefWidth="235.0" text="Daily calories burned">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="412.0" layoutY="298.0" prefHeight="27.0" prefWidth="155.0" text="Sedentary:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="584.0" layoutY="298.0" prefHeight="27.0" prefWidth="103.0" text="2,004">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="584.0" layoutY="328.0" prefHeight="27.0" prefWidth="103.0" text="2,296">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="412.0" layoutY="328.0" prefHeight="27.0" prefWidth="155.0" text="Lightly active:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="412.0" layoutY="388.0" prefHeight="27.0" prefWidth="155.0" text="Very active:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="584.0" layoutY="388.0" prefHeight="27.0" prefWidth="103.0" text="2,881">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="584.0" layoutY="358.0" prefHeight="27.0" prefWidth="103.0" text="2,589">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="412.0" layoutY="358.0" prefHeight="27.0" prefWidth="155.0" text="Moderately active:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="584.0" layoutY="417.0" prefHeight="27.0" prefWidth="103.0" text="3,173">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="412.0" layoutY="417.0" prefHeight="27.0" prefWidth="155.0" text="Extremely active:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

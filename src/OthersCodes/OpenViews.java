@@ -20,6 +20,29 @@ public class OpenViews {
         } catch (Exception ex) {
             Logger.getLogger(OpenViews.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    public static void openview_BMIcalculator(){
+        
+        BMIcalculator screen = new BMIcalculator();
+        
+        try {
+            screen.start(new Stage());
+        } catch (Exception ex) {
+            Logger.getLogger(OpenViews.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    public static void openview_BMRcalculator(){
+        
+        BMRcalculator screen = new BMRcalculator();
+        
+        try {
+            screen.start(new Stage());
+        } catch (Exception ex) {
+            Logger.getLogger(OpenViews.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
     

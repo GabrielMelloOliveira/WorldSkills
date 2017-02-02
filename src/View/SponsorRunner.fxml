@@ -14,7 +14,7 @@
             <AnchorPane prefHeight="60.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="btn_back" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Back" />
-                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2015" textFill="WHITE">
+                  <Label layoutX="125.0" layoutY="15.0" prefHeight="30.0" prefWidth="470.0" text="MARATHON SKILLS 2017" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="24.0" />
                      </font>
@@ -25,7 +25,7 @@
          <bottom>
             <AnchorPane prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
-                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="15.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
+                  <Label fx:id="time_marathon" alignment="CENTER" layoutX="49.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -36,8 +36,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="tf_email_address" layoutX="161.0" layoutY="211.0" prefHeight="25.0" prefWidth="190.0" promptText="Your name" />
-                  <TextField fx:id="pf_password" layoutX="161.0" layoutY="246.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter your password" />
+                  <TextField fx:id="tf_name" layoutX="161.0" layoutY="211.0" prefHeight="25.0" prefWidth="190.0" promptText="Your name" />
                   <Label alignment="CENTER" layoutX="184.0" layoutY="28.0" prefHeight="40.0" prefWidth="300.0" text="Sponsor a runner">
                      <font>
                         <Font size="24.0" />
@@ -78,21 +77,21 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="pf_password1" layoutX="161.0" layoutY="351.0" prefHeight="25.0" prefWidth="41.0" promptText="01" />
-                  <TextField fx:id="tf_email_address1" layoutX="161.0" layoutY="281.0" prefHeight="25.0" prefWidth="190.0" promptText="Credit card holder" />
-                  <TextField fx:id="pf_password11" layoutX="161.0" layoutY="386.0" prefHeight="25.0" prefWidth="68.0" promptText="123" />
+                  <TextField fx:id="tf_expiry_date_month" layoutX="161.0" layoutY="351.0" prefHeight="25.0" prefWidth="41.0" promptText="01" />
+                  <TextField fx:id="tf_name_card" layoutX="161.0" layoutY="281.0" prefHeight="25.0" prefWidth="190.0" promptText="Credit card holder" />
+                  <TextField fx:id="tf_cvc" layoutX="161.0" layoutY="386.0" prefHeight="25.0" prefWidth="68.0" promptText="123" />
                   <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="386.0" prefHeight="25.0" prefWidth="95.0" text="CVC:">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="tf_email_address11" layoutX="160.0" layoutY="316.0" prefHeight="25.0" prefWidth="190.0" promptText="1234 1234 1234 1234" />
+                  <TextField fx:id="tf_credit_card" layoutX="160.0" layoutY="316.0" prefHeight="25.0" prefWidth="190.0" promptText="1234 1234 1234 1234" />
                   <Label alignment="CENTER_RIGHT" layoutX="48.0" layoutY="316.0" prefHeight="25.0" prefWidth="95.0" text="Credit Card #:">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="pf_password12" layoutX="215.0" layoutY="351.0" prefHeight="25.0" prefWidth="54.0" promptText="2017" />
+                  <TextField fx:id="tf_expiry_date_year" layoutX="215.0" layoutY="351.0" prefHeight="25.0" prefWidth="54.0" promptText="2017" />
                   <Label alignment="CENTER" layoutX="441.0" layoutY="199.0" prefHeight="25.0" prefWidth="146.0" text="Save The Cats Fund">
                      <font>
                         <Font size="14.0" />
@@ -103,16 +102,17 @@
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="387.0" layoutY="270.0" prefHeight="80.0" prefWidth="254.0" text="\$50" textFill="#b4b4b4">
+                  <Label fx:id="lb_money" alignment="CENTER" layoutX="387.0" layoutY="270.0" prefHeight="80.0" prefWidth="254.0" text="\$0" textFill="#b4b4b4">
                      <font>
                         <Font name="Arial" size="64.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="pf_password121" layoutX="487.0" layoutY="353.0" prefHeight="25.0" prefWidth="54.0" promptText="\$50" />
-                  <Button layoutX="452.0" layoutY="353.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
-                  <Button layoutX="551.0" layoutY="353.0" mnemonicParsing="false" text="+" />
-                  <Button layoutX="444.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Pay now" />
-                  <Button layoutX="520.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Cancel" />
+                  <TextField fx:id="tf_money" layoutX="487.0" layoutY="353.0" prefHeight="25.0" prefWidth="54.0" promptText="\$0" />
+                  <Button fx:id="less_money" layoutX="452.0" layoutY="353.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <Button fx:id="more_money" layoutX="551.0" layoutY="353.0" mnemonicParsing="false" text="+" />
+                  <Button fx:id="btn_pay_now" layoutX="444.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Pay now" />
+                  <Button fx:id="btn_cancel" layoutX="520.0" layoutY="401.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Cancel" />
+                  <ComboBox fx:id="cb_runner" layoutX="161.0" layoutY="246.0" prefHeight="25.0" prefWidth="190.0" />
                </children>
             </AnchorPane>
          </center>
